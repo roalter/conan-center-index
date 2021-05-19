@@ -18,6 +18,7 @@ class NinjaConan(ConanFile):
 
     def package_id(self):
         del self.info.settings.compiler
+        del self.info.settings.build_type
 
     def _configure_cmake(self):
         if self._cmake:
